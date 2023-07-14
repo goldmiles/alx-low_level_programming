@@ -10,19 +10,16 @@
  */
 int main(void)
 {
-	int i;
+	putchar('0');
 
-	putchar('0'); /* Print the first digit */
-
-	/* Print the remaining digits using a loop */
-	for (i = 1; i < 10; i++)
+	for (int i = 1; i < 10; i++)
 	{
-		putchar(','); /* Print the separator */
-		putchar(' '); /* Print a space */
-		putchar(i + '0'); /* Print the current digit */
+		putchar(',');
+		putchar(' ');
+		putchar(i + '0');
 	}
 
-	putchar('\n'); /* Print a new line */
+	putchar('\n');
 
 	return (0);
 }
