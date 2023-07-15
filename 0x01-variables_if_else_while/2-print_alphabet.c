@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- * Main - Entry point
- * Return: Always 0 (success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -9,12 +11,13 @@ int main(void)
 
 	c = 'a';
 
-	while (c  <= 'z')
+	while (c <= 'z')
 	{
 		putchar(c);
 		c++;
 	}
-	putchar('\n');
-	return (0);
 
+	putchar('\n');
+
+	return (0);
 }
