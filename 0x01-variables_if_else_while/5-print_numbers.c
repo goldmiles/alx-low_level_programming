@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Prints alphabets excluding 'q' and 'e'
+ * main - Prints decimal numbers
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char i = 'a';
+	int d = 0;
 
-	while (i <= 'z')
+	while (d <= 9)
 	{
-		if (i != 'q' && i != 'e')
-			putchar(i);
-		i++;
+		putchar(d + '0');
+		d++;
 	}
 
 	putchar('\n');
