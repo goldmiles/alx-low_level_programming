@@ -3,23 +3,23 @@
 /**
  * main - Entry point
  *
- * Description: Prints all possible combinations of single-digit numbers
- * separated by a comma and space. Numbers are printed in ascending order.
- *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	putchar('0');
+	int i;
 
-	for (int i = 1; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(',');
-		putchar(' ');
 		putchar(i + '0');
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
