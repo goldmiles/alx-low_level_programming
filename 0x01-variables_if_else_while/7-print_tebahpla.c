@@ -1,9 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - print alphabets in reverse
+ * main - Prints alphabets in reverse order
  *
- * Return: (0)
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,9 +12,9 @@ int main(void)
 	while (i >= 'a')
 	{
 		putchar(i);
-		i++;
+		i--;
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
