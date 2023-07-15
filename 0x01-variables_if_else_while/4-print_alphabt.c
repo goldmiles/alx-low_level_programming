@@ -1,9 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - print alphabets apart from q and e
+ * main - Prints alphabets excluding 'q' and 'e'
  *
- * Return: always (0)
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -11,9 +11,12 @@ int main(void)
 
 	while (i <= 'z')
 	{
-		putchar(i);
+		if (i != 'q' && i != 'e')
+			putchar(i);
 		i++;
 	}
+
 	putchar('\n');
 	return (0);
 }
+
