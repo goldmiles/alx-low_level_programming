@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * _putchar - writes a character to the standard output
@@ -13,11 +13,9 @@ int _putchar(char c)
 }
 
 /**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
+ * print_putchar - prints _putchar followed by a new line
  */
-int main(void)
+void print_putchar(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -28,6 +26,16 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
+}
+
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	print_putchar();
 
 	return (0);
 }
